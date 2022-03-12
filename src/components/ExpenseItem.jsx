@@ -1,9 +1,10 @@
 import "./ExpenseItem.css";
+
 function ExpenseItem(props) {
-  const month = props.date.toLocalestring('en-US',{ month:'long' });
-  const day =  props.date.toLocalestring('en-US',{day: '2digit'});
+
+  const month = props.date.toLocalestring('en-US' , { month: 'long'});
+  const day = props.date.toLocalestring('en-US' , { day: '2-digit'});
   const year = props.date.getFullYear();
- 
   return (
     <div className="expense-item">
       <div>
